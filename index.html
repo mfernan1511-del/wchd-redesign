@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Best Jacksonville Hair Salon, Top Jax Salon Balayage lived-in color</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FAF8F4;
+    --white:#FFFFFF;
+    --charcoal:#605e5e;
+    --red:#C3344A;
+    --gold:#b98d4b;
+    --gold-light:#ce9339;
+    --gold-pale:#dec9a9;
+  }
+  body { font-family:'Inter',sans-serif; background:var(--cream); color:var(--charcoal); }
+  h1,h2,h3,.serif { font-family:'Playfair Display',serif; color:#3a3838; }
+  html{ scroll-behavior:smooth; }
+  .snap-wrap{ scroll-snap-type:y proximity; }
+  .panel{ scroll-snap-align:start; min-height:100vh; }
+  .fade-up{ opacity:0; transform:translateY(50px); }
+  .nav-blur{ backdrop-filter:blur(10px); background:rgba(250,248,244,0.85); }
+  .gold{ color:var(--gold); }
+  .bg-gold{ background:var(--gold-light); }
+  .red{ color:var(--red); }
+  .bg-red{ background:var(--red); }
+  .hero-img{
+    background:
+      linear-gradient(180deg, rgba(250,248,244,0.05), rgba(58,56,56,0.8)),
+      url('https://westcoasthairdesign.com/wp-content/uploads/2018/01/westcoast-hair-1.jpg');
+    background-size:cover; background-position:center top;
+  }
+  .scroll-line{ position:fixed; top:0; left:0; height:3px; background:linear-gradient(90deg,var(--gold-light),var(--red)); z-index:60; width:0%; }
+  .gallery-track{ display:flex; gap:1.25rem; }
+  .gallery-track img{ height:60vh; width:auto; object-fit:cover; border-radius:6px; flex-shrink:0; }
+  .tag{ border:1px solid var(--gold-pale); border-radius:999px; padding:.4rem 1rem; font-size:.75rem; letter-spacing:.05em; color:var(--gold); }
+</style>
+</head>
+<body>
+
+<div class="scroll-line" id="scrollLine"></div>
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-40 nav-blur border-b border-black/5">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+    <span class="serif text-lg tracking-wide">West Coast <span class="red">Hair Design</span></span>
+    <div class="hidden md:flex gap-7 text-sm tracking-wide text-charcoal/70">
+      <a href="#hair" class="hover:text-black">Hair</a>
+      <a href="#stylists" class="hover:text-black">Stylists</a>
+      <a href="#services" class="hover:text-black">Services</a>
+      <a href="#shop" class="hover:text-black">Shop</a>
+      <a href="#salon" class="hover:text-black">Salon</a>
+      <a href="#contact" class="hover:text-black">Contact</a>
+      <a href="#testimonials" class="hover:text-black">Testimonials</a>
+    </div>
+    <a href="#contact" class="text-sm bg-red text-white px-5 py-2 rounded-full hover:opacity-90 transition">Book Now</a>
+  </div>
+</nav>
+
+<div class="snap-wrap">
+
+<!-- HERO -->
+<section id="hair" class="panel hero-img flex flex-col justify-end relative text-white">
+  <div class="max-w-6xl mx-auto px-6 pb-24 w-full">
+    <p class="tracking-[0.3em] text-xs mb-4 fade-up" style="color:var(--gold-pale)">JACKSONVILLE'S PREMIER HAIR COLOR SPECIALISTS — OVER 30 YEARS OF EXPERIENCE</p>
+    <h1 class="serif text-4xl md:text-6xl leading-tight fade-up max-w-3xl">Best Jacksonville Hair Salon, Top Jax Salon Balayage Lived-In Color</h1>
+    <p class="text-white/80 mt-6 max-w-xl fade-up">For over 30 years, Jacksonville has trusted us to deliver personalized, modern color that enhances their natural beauty. Whether you're blending gray, embracing it, or reinventing your look — every detail is customized for effortless elegance by our expert team.</p>
+    <div class="flex flex-wrap gap-3 mt-8 fade-up">
+      <span class="tag">Luxury Blondes</span>
+      <span class="tag">Modern Gray Coverage</span>
+      <span class="tag">Custom Foil Highlights</span>
+      <span class="tag">Lived-In Color Balayage</span>
+      <span class="tag">Fiery Redheads</span>
+      <span class="tag">Sun-Kissed Brunettes</span>
+    </div>
+    <div class="flex gap-4 mt-10 fade-up">
+      <a href="#contact" class="bg-red text-white px-7 py-3 rounded-full text-sm font-medium hover:opacity-90 transition">Color Consultation</a>
+      <a href="#contact" class="border border-white/40 text-white px-7 py-3 rounded-full text-sm font-medium hover:bg-white/10 transition">Book Now</a>
+    </div>
+  </div>
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 text-xs tracking-widest animate-bounce">SCROLL</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="panel py-32 bg-white flex items-center">
+  <div class="max-w-6xl mx-auto px-6 w-full">
+    <p class="gold tracking-[0.3em] text-xs mb-4 fade-up">SERVICES</p>
+    <h2 class="serif text-4xl md:text-5xl mb-8 fade-up">A Conversation First.</h2>
+    <p class="text-charcoal/70 max-w-2xl mb-16 fade-up leading-relaxed">At West Coast Hair Design we believe that great conversation provides the best beginning to any salon appointment. We consider a thorough consultation to be one of the most important parts of every salon visit.</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-[var(--cream)] p-10 rounded-xl shadow-sm fade-up border border-black/5">
+        <h3 class="serif text-2xl mb-3 red">Color Services</h3>
+        <p class="text-charcoal/70 text-sm leading-relaxed">Luxury blondes, modern gray coverage, custom foil highlights, lived-in color, fiery redheads, sun-kissed brunettes.</p>
+      </div>
+      <div class="bg-[var(--cream)] p-10 rounded-xl shadow-sm fade-up border border-black/5">
+        <h3 class="serif text-2xl mb-3 red">Bridal Hairstyles</h3>
+        <p class="text-charcoal/70 text-sm leading-relaxed">Bespoke bridal hair design for your most important day, from trial to final style.</p>
+      </div>
+      <div class="bg-[var(--cream)] p-10 rounded-xl shadow-sm fade-up border border-black/5">
+        <h3 class="serif text-2xl mb-3 red">HALOCOUTURE® Extensions</h3>
+        <p class="text-charcoal/70 text-sm leading-relaxed">100% Remy Human Hair extensions you can style and wash just like your natural hair.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BALAYAGE -->
+<section id="balayage" class="panel relative flex items-center text-white">
+  <div class="absolute inset-0 bg-[url('https://westcoasthairdesign.com/wp-content/uploads/2020/11/balayage-jacksonville-2020-2.jpg')] bg-cover bg-center" style="filter:brightness(0.38);"></div>
+  <div class="max-w-3xl mx-auto px-6 relative z-10 text-center">
+    <p class="tracking-[0.3em] text-xs mb-4 fade-up" style="color:var(--gold-pale)">BALAYAGE — PRONOUNCED: BAH-LEE-AHGE</p>
+    <h2 class="serif text-4xl md:text-6xl mb-6 fade-up text-white">Jacksonville's Balayage Experts</h2>
+    <p class="text-white/85 leading-relaxed fade-up">A French method of painting highlights onto the hair. Hand-painted highlights are customized for your exact look — seamless color, no roots, effortless grow out.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="panel py-32 bg-white flex flex-col justify-center overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6 w-full mb-10">
+    <p class="gold tracking-[0.3em] text-xs mb-4 fade-up">OUR WORK</p>
+    <h2 class="serif text-4xl md:text-5xl fade-up">Real Color. Real Results.</h2>
+  </div>
+  <div class="gallery-track px-6 fade-up">
+    <img src="https://westcoasthairdesign.com/wp-content/uploads/2020/11/balayage-jacksonville-2020-2.jpg" alt="Balayage Jacksonville" />
+    <img src="https://westcoasthairdesign.com/wp-content/uploads/2020/11/best-salon-jacksonville-1-250x334.jpg" alt="Best salon Jacksonville" />
+    <img src="https://westcoasthairdesign.com/wp-content/uploads/2020/11/best-salon-jacksonville-3-250x334.jpg" alt="Salon work" />
+    <img src="https://westcoasthairdesign.com/wp-content/uploads/2020/11/hair-salon-2-250x334.jpg" alt="Hair salon" />
+    <img src="https://westcoasthairdesign.com/wp-content/uploads/2020/11/jax-best-salon-1-250x334.jpg" alt="Jax best salon" />
+    <img src="https://westcoasthairdesign.com/wp-content/uploads/2020/11/hair-salon-4-250x334.jpg" alt="Hair salon" />
+  </div>
+</section>
+
+<!-- SHOP -->
+<section id="shop" class="panel py-32 bg-[var(--cream)] flex items-center">
+  <div class="max-w-6xl mx-auto px-6 w-full grid md:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="gold tracking-[0.3em] text-xs mb-4">SHOP</p>
+      <h2 class="serif text-4xl mb-6">Look & Feel Amazing, Every Day.</h2>
+      <p class="text-charcoal/70 leading-relaxed mb-6">We want your hair to look and feel amazing everyday. To make that happen we offer the absolute best hair care products available — shop Bumble and bumble here. You can also shop our boutique, featuring an ever-changing and trendy assortment of jewelry, purses, and hair accessories (of course).</p>
+      <span class="tag inline-block">Bumble & Bumble Exclusive Salon</span>
+    </div>
+    <div class="fade-up bg-white rounded-xl p-10 text-center border border-black/5">
+      <p class="serif text-2xl mb-2 red">"Our goal is to deliver consistent, jaw dropping dream haircolor to each guest we serve!"</p>
+      <a href="#" class="inline-block mt-6 bg-gold text-white px-7 py-3 rounded-full text-sm font-medium hover:opacity-90 transition">Gift Certificates Available Here</a>
+    </div>
+  </div>
+</section>
+
+<!-- VIP -->
+<section id="vip" class="panel py-32 bg-white flex items-center">
+  <div class="max-w-2xl mx-auto px-6 text-center fade-up">
+    <p class="gold tracking-[0.3em] text-xs mb-4">VIP LIST</p>
+    <h2 class="serif text-4xl mb-6">Join the Salon List & Become a West Coast VIP</h2>
+    <p class="text-charcoal/70 leading-relaxed mb-8">Thoughtful hair tips, product favorites, and personal notes from behind the chair — plus insider access to special discounts, gifts with purchase, and updates from your favorite stylists. We only email a few times a year — we promise not to flood your inbox.</p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
+      <input type="email" placeholder="Your email address" class="flex-1 px-5 py-3 rounded-full border border-black/10 text-sm" />
+      <button class="bg-red text-white px-7 py-3 rounded-full text-sm font-medium hover:opacity-90 transition">Join</button>
+    </div>
+  </div>
+</section>
+
+<!-- SALON / TEAM / ABOUT -->
+<section id="salon" class="panel py-32 bg-[var(--cream)] flex items-center">
+  <div class="max-w-6xl mx-auto px-6 w-full">
+    <p class="gold tracking-[0.3em] text-xs mb-4 fade-up">JACKSONVILLE'S HAIR COLOR EXPERTS</p>
+    <h2 class="serif text-4xl md:text-5xl mb-4 fade-up max-w-2xl">Locally Owned, Nationally Trained.</h2>
+    <p class="text-charcoal/70 max-w-3xl fade-up leading-relaxed mb-10">West Coast Hair Design is a team of the most elite colorists in the country, featuring modern coloring techniques in a boutique style atmosphere. We are master colorists — certified balayage and blonde experts specializing in balayage, super blondes, lived-in-color and modern gray coverage. Every team member, from owner to the newest apprentice, undergoes continuous and rigorous training. We travel the country to bring you the freshest styles and emerging trends from New York, California, and around the world.</p>
+    <div class="fade-up flex flex-wrap gap-2 text-xs text-charcoal/60">
+      <span class="tag">Linda Deason</span><span class="tag">Jena Nelson</span><span class="tag">Anna Hendrix-Carter</span><span class="tag">Heather Lucas</span><span class="tag">Lindsey Long</span><span class="tag">Cathy Leeper</span><span class="tag">Miranda Wahlstrom</span><span class="tag">Amy Ron</span><span class="tag">Siobhan Bowman</span><span class="tag">Ashley Shaw</span><span class="tag">Halle Read</span><span class="tag">Anna Weston</span><span class="tag">Kayla Tarantino</span>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILED BALAYAGE -->
+<section id="balayage-detail" class="panel py-32 bg-white flex items-center">
+  <div class="max-w-3xl mx-auto px-6 fade-up">
+    <p class="gold tracking-[0.3em] text-xs mb-4">THE BEAUTY IS IN THE DETAILS</p>
+    <h2 class="serif text-4xl mb-6">Jacksonville's Certified Balayage Experts</h2>
+    <p class="text-charcoal/70 leading-relaxed mb-4">Balayage means to sweep, and unlike foil highlights, this method disguises unwanted re-growth lines by hand painting highlights customized for your exact look — creating a more natural, sophisticated, dimensional finish. Great for beachy blondes, ash blondes, brunettes, creative colors, redheads, and even black hair.</p>
+    <p class="text-charcoal/70 leading-relaxed">Our clients come from all over the greater Jacksonville area — Ponte Vedra, Amelia Island, Jacksonville Beach, San Marco, Riverside, Fleming Island, even Savannah and Ormond Beach — to experience the most amazing hair color in a serene boutique setting.</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="panel py-32 bg-[var(--cream)] flex items-center">
+  <div class="max-w-4xl mx-auto px-6 text-center fade-up">
+    <p class="gold tracking-[0.3em] text-xs mb-4">TESTIMONIALS</p>
+    <h2 class="serif text-4xl mb-10">What Our Guests Say</h2>
+    <p class="serif text-2xl text-charcoal/80 italic">"The beauty is in the details — your complete satisfaction is our goal."</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="panel flex items-center py-32 bg-white">
+  <div class="max-w-6xl mx-auto px-6 w-full grid md:grid-cols-2 gap-16">
+    <div class="fade-up">
+      <p class="gold tracking-[0.3em] text-xs mb-4">VISIT US</p>
+      <h2 class="serif text-4xl mb-8">Let's Talk Color.</h2>
+      <p class="text-charcoal/70 mb-2">10950-44 San Jose Boulevard</p>
+      <p class="text-charcoal/70 mb-6">Jacksonville, Florida 32223</p>
+      <p class="text-charcoal/70 mb-1">904.260.8339</p>
+      <a href="#" class="inline-block mt-8 bg-red text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition">Book Your Appointment</a>
+    </div>
+    <div class="fade-up text-charcoal/70 text-sm leading-7">
+      <p class="serif text-lg mb-3" style="color:#3a3838">Hours</p>
+      <p>Monday — 10am–4pm</p>
+      <p>Tuesday — 9am–8pm</p>
+      <p>Wednesday — 9am–8pm</p>
+      <p>Thursday — 9am–8pm</p>
+      <p>Friday — 9am–5pm</p>
+      <p>Saturday — 9am–5pm</p>
+      <p>Sunday — Closed</p>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<footer class="border-t border-black/5 py-10 text-center text-charcoal/50 text-xs bg-[var(--cream)]">
+  <p class="serif text-base mb-2" style="color:#3a3838">The Color Salon in Jacksonville You've Been Looking For!</p>
+  <p>West Coast Hair Design · 10950-44 San Jose Boulevard, Jacksonville, FL 32223 · 904.260.8339</p>
+  <p class="mt-2">Concept redesign — original site content &copy; West Coast Hair Design</p>
+</footer>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.utils.toArray('.fade-up').forEach(el => {
+    gsap.to(el, {
+      opacity: 1, y: 0, duration: 1, ease: 'power3.out',
+      scrollTrigger: { trigger: el, start: 'top 85%' }
+    });
+  });
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+    document.getElementById('scrollLine').style.width = pct + '%';
+  });
+</script>
+</body>
+</html>
