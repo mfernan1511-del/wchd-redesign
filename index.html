@@ -37,9 +37,25 @@
     background-size:cover; background-position:center top;
   }
   .scroll-line{ position:fixed; top:0; left:0; height:3px; background:linear-gradient(90deg,var(--gold-light),var(--red)); z-index:60; width:0%; }
-  .gallery-track{ display:flex; gap:1.25rem; }
-  .gallery-track img{ height:60vh; width:auto; object-fit:cover; border-radius:6px; flex-shrink:0; }
-  .tag{ border:1px solid var(--gold-pale); border-radius:999px; padding:.4rem 1rem; font-size:.75rem; letter-spacing:.05em; color:var(--gold); }
+  .gallery-track{ display:flex; gap:1.5rem; }
+  .gallery-track img{ height:60vh; width:auto; object-fit:cover; border-radius:10px; flex-shrink:0; box-shadow:0 20px 40px -15px rgba(0,0,0,0.25); transition:transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .5s; }
+  .gallery-track img:hover{ transform:translateY(-10px) scale(1.02); box-shadow:0 30px 50px -15px rgba(0,0,0,0.35); }
+  .tag{ border:1px solid var(--gold-pale); border-radius:999px; padding:.45rem 1.1rem; font-size:.72rem; letter-spacing:.05em; color:var(--gold); transition:all .3s; background:rgba(255,255,255,0.04); }
+  .tag:hover{ background:var(--gold); color:#fff; border-color:var(--gold); }
+  .serv{ transition:transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s; }
+  .serv:hover{ transform:translateY(-8px); box-shadow:0 25px 40px -15px rgba(195,52,74,0.18); }
+  a, button{ transition:all .3s ease; }
+  a.bg-red:hover, button.bg-red:hover{ transform:translateY(-2px); box-shadow:0 12px 24px -8px rgba(195,52,74,0.5); }
+  a.bg-gold:hover{ transform:translateY(-2px); box-shadow:0 12px 24px -8px rgba(185,141,74,0.5); }
+  nav a{ position:relative; }
+  nav a::after{ content:''; position:absolute; left:0; bottom:-6px; width:0; height:1.5px; background:var(--red); transition:width .3s; }
+  nav a:hover::after{ width:100%; }
+  .hero-img{ position:relative; }
+  .hero-img::before{ content:''; position:absolute; inset:0; background:radial-gradient(ellipse at bottom left, rgba(195,52,74,0.15), transparent 60%); }
+  .shop-card{ box-shadow:0 25px 60px -20px rgba(195,52,74,0.15); transition:transform .4s; }
+  .shop-card:hover{ transform:translateY(-6px); }
+  input:focus{ outline:none; border-color:var(--gold); box-shadow:0 0 0 3px rgba(185,141,74,0.15); }
+  ::selection{ background:var(--gold-pale); }
 </style>
 </head>
 <body>
@@ -94,15 +110,15 @@
     <h2 class="serif text-4xl md:text-5xl mb-8 fade-up">A Conversation First.</h2>
     <p class="text-charcoal/70 max-w-2xl mb-16 fade-up leading-relaxed">At West Coast Hair Design we believe that great conversation provides the best beginning to any salon appointment. We consider a thorough consultation to be one of the most important parts of every salon visit.</p>
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-[var(--cream)] p-10 rounded-xl shadow-sm fade-up border border-black/5">
+      <div class="bg-[var(--cream)] p-10 rounded-xl shadow-sm fade-up serv border border-black/5">
         <h3 class="serif text-2xl mb-3 red">Color Services</h3>
         <p class="text-charcoal/70 text-sm leading-relaxed">Luxury blondes, modern gray coverage, custom foil highlights, lived-in color, fiery redheads, sun-kissed brunettes.</p>
       </div>
-      <div class="bg-[var(--cream)] p-10 rounded-xl shadow-sm fade-up border border-black/5">
+      <div class="bg-[var(--cream)] p-10 rounded-xl shadow-sm fade-up serv border border-black/5">
         <h3 class="serif text-2xl mb-3 red">Bridal Hairstyles</h3>
         <p class="text-charcoal/70 text-sm leading-relaxed">Bespoke bridal hair design for your most important day, from trial to final style.</p>
       </div>
-      <div class="bg-[var(--cream)] p-10 rounded-xl shadow-sm fade-up border border-black/5">
+      <div class="bg-[var(--cream)] p-10 rounded-xl shadow-sm fade-up serv border border-black/5">
         <h3 class="serif text-2xl mb-3 red">HALOCOUTURE® Extensions</h3>
         <p class="text-charcoal/70 text-sm leading-relaxed">100% Remy Human Hair extensions you can style and wash just like your natural hair.</p>
       </div>
@@ -145,7 +161,7 @@
       <p class="text-charcoal/70 leading-relaxed mb-6">We want your hair to look and feel amazing everyday. To make that happen we offer the absolute best hair care products available — shop Bumble and bumble here. You can also shop our boutique, featuring an ever-changing and trendy assortment of jewelry, purses, and hair accessories (of course).</p>
       <span class="tag inline-block">Bumble & Bumble Exclusive Salon</span>
     </div>
-    <div class="fade-up bg-white rounded-xl p-10 text-center border border-black/5">
+    <div class="fade-up shop-card bg-white rounded-xl p-10 text-center border border-black/5">
       <p class="serif text-2xl mb-2 red">"Our goal is to deliver consistent, jaw dropping dream haircolor to each guest we serve!"</p>
       <a href="#" class="inline-block mt-6 bg-gold text-white px-7 py-3 rounded-full text-sm font-medium hover:opacity-90 transition">Gift Certificates Available Here</a>
     </div>
